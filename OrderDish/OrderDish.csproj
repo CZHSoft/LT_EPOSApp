@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D47D89DE-EBA1-4530-BD1C-496893853CA7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OrderDish</RootNamespace>
+    <AssemblyName>OrderDish</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.2</OSVersion>
+    <DeployDirSuffix>OrderDish</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <StartupObject>OrderDish.Program</StartupObject>
+    <FileUpgradeFlags>0</FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Windowsce.Forms" />
+    <Reference Include="Microsoft.WindowsMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.WindowsMobile.Status, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action\InitializationAction.cs" />
+    <Compile Include="Action\ODAction.cs" />
+    <Compile Include="BLL\InitializationBLL.cs" />
+    <Compile Include="BLL\MenuListBLL.cs" />
+    <Compile Include="BLL\OrderDetailBLL.cs" />
+    <Compile Include="BLL\WaiterIDListBLL.cs" />
+    <Compile Include="BLL\DeskListBLL.cs" />
+    <Compile Include="Common\CaptureAPI.cs" />
+    <Compile Include="Common\FoodState.cs" />
+    <Compile Include="Common\HtmlEntities.cs" />
+    <Compile Include="Common\HttpUtility.cs" />
+    <Compile Include="Common\SoundPlayer.cs" />
+    <Compile Include="Common\WIFIConnectCheck.cs" />
+    <Compile Include="Resources\Chinese.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Chinese.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FullScreenApp.cs" />
+    <Compile Include="Common\GetDeviceUniqueID.cs" />
+    <Compile Include="Resources\English.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>English.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Event\ListModelEvent.cs" />
+    <Compile Include="View\CountSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CountSettingForm.Designer.cs">
+      <DependentUpon>CountSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LanguageChooseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LanguageChooseForm.Designer.cs">
+      <DependentUpon>LanguageChooseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\HttpFileControl.cs" />
+    <Compile Include="Common\Native.cs" />
+    <Compile Include="Common\Ping.cs" />
+    <Compile Include="Common\PInvokeAPI.cs" />
+    <Compile Include="Common\SIP.cs" />
+    <Compile Include="DAL\SqlCeDAL.cs" />
+    <Compile Include="DAL\SqlDAL.cs" />
+    <Compile Include="Event\WattingFormEvent.cs" />
+    <Compile Include="GlobalVariable.cs" />
+    <Compile Include="Model\ListModel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\ListModel.designer.cs">
+      <DependentUpon>ListModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MenuModel.cs" />
+    <Compile Include="Model\ReportModel.cs" />
+    <Compile Include="View\InitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InitForm.Designer.cs">
+      <DependentUpon>InitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View\FoodListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FoodListForm.Designer.cs">
+      <DependentUpon>FoodListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FoodDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FoodDetailForm.Designer.cs">
+      <DependentUpon>FoodDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MMSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MMSForm.Designer.cs">
+      <DependentUpon>MMSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\OrderVerifyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\OrderVerifyForm.Designer.cs">
+      <DependentUpon>OrderVerifyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RemarkSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RemarkSettingForm.Designer.cs">
+      <DependentUpon>RemarkSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WaittingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WaittingForm.Designer.cs">
+      <DependentUpon>WaittingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WebReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Resources\Chinese.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Chinese.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\English.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>English.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CountSettingForm.resx">
+      <DependentUpon>CountSettingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LanguageChooseForm.resx">
+      <DependentUpon>LanguageChooseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ListModel.resx">
+      <DependentUpon>ListModel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InitForm.resx">
+      <DependentUpon>InitForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FoodListForm.resx">
+      <DependentUpon>FoodListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FoodDetailForm.resx">
+      <DependentUpon>FoodDetailForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MMSForm.resx">
+      <DependentUpon>MMSForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\OrderVerifyForm.resx">
+      <DependentUpon>OrderVerifyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RemarkSettingForm.resx">
+      <DependentUpon>RemarkSettingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WaittingForm.resx">
+      <DependentUpon>WaittingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AlphaButton\AlphaControls.csproj">
+      <Project>{CC52C257-6A9B-4414-88E9-54B5F2CFDB92}</Project>
+      <Name>AlphaControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AXControls\AXControls.csproj">
+      <Project>{D2A80D29-FBCB-47CB-8620-F736A06FD79A}</Project>
+      <Name>AXControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HostingLibrary\AXHostingLibrary.csproj">
+      <Project>{C7F947C7-77B4-4AA2-B34B-17F9A163E8FC}</Project>
+      <Name>AXHostingLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.WindowsMobile.Gestures\Microsoft.WindowsMobile.Gestures.csproj">
+      <Project>{B8B20FB7-545A-4896-8DB8-63052E801A5E}</Project>
+      <Name>Microsoft.WindowsMobile.Gestures</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WebReference\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WebReference\Service.disco" />
+    <None Include="Web References\WebReference\Service.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://198.168.0.253/LTOD/Service.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\WebReference\</RelPath>
+      <UpdateFromURL>http://198.168.0.253/LTOD/Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="setting.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

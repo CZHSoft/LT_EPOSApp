@@ -1,0 +1,2 @@
+webservice:http://198.168.0.253/LTOD/Service.asmx
+http://198.168.0.253//TestFileTran

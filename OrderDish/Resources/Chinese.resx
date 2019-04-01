@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ListForm_abpActionBar_abtn" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="ListForm_pspFoodShow_btnBuy" xml:space="preserve">
+    <value>购买</value>
+  </data>
+  <data name="ListForm_pspFoodShow_btnLast" xml:space="preserve">
+    <value>上一个</value>
+  </data>
+  <data name="ListForm_pspFoodShow_btnNext" xml:space="preserve">
+    <value>下一个</value>
+  </data>
+  <data name="MainForm_btnExit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="MainForm_btnList" xml:space="preserve">
+    <value>点菜列表</value>
+  </data>
+  <data name="MainForm_btnOrder" xml:space="preserve">
+    <value>查看订单</value>
+  </data>
+  <data name="RemarkSettingForm_btnCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="RemarkSettingForm_btnSave" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="RemarkSettingForm_laber" xml:space="preserve">
+    <value>口味需求:</value>
+  </data>
+  <data name="ReportForm_btnReflash" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="ReportForm_btnReturn" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="ReportForm_btnSubmit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="ReportForm_Faile1" xml:space="preserve">
+    <value>一次只能修改一行!</value>
+  </data>
+  <data name="ReportForm_Faile2" xml:space="preserve">
+    <value>获取订单失败!</value>
+  </data>
+  <data name="ReportForm_Faile3" xml:space="preserve">
+    <value>请选择要修改的行!</value>
+  </data>
+  <data name="ReportForm_LV1" xml:space="preserve">
+    <value>菜名</value>
+  </data>
+  <data name="ReportForm_LV2" xml:space="preserve">
+    <value>价格</value>
+  </data>
+  <data name="ReportForm_LV3" xml:space="preserve">
+    <value>份数</value>
+  </data>
+  <data name="ReportForm_LV4" xml:space="preserve">
+    <value>口味备注</value>
+  </data>
+  <data name="ReportForm_LV5" xml:space="preserve">
+    <value>订单状态</value>
+  </data>
+  <data name="ReportForm_None" xml:space="preserve">
+    <value>订单列表为空!</value>
+  </data>
+  <data name="ReportForm_OK" xml:space="preserve">
+    <value>订单已提交!</value>
+  </data>
+  <data name="WaittingFrom_strMsg" xml:space="preserve">
+    <value>资源准备中...</value>
+  </data>
+  <data name="btnReturn" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="btnSubmit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="labelTitle" xml:space="preserve">
+    <value>清单列表</value>
+  </data>
+  <data name="LV_FN" xml:space="preserve">
+    <value>菜名</value>
+  </data>
+  <data name="LV_PR" xml:space="preserve">
+    <value>价格</value>
+  </data>
+  <data name="LV_QU" xml:space="preserve">
+    <value>份数</value>
+  </data>
+  <data name="LV_TO" xml:space="preserve">
+    <value>合计</value>
+  </data>
+  <data name="LV_TR" xml:space="preserve">
+    <value>口味备注</value>
+  </data>
+  <data name="MSGBOX_Add" xml:space="preserve">
+    <value>添加订单:</value>
+  </data>
+  <data name="MSGBOX_Exist" xml:space="preserve">
+    <value>已存在订单：</value>
+  </data>
+  <data name="MSGBOX_Fail" xml:space="preserve">
+    <value>订单提交失败!</value>
+  </data>
+  <data name="MSGBOX_Succ" xml:space="preserve">
+    <value>订单提交成功!</value>
+  </data>
+  <data name="abtnBuy" xml:space="preserve">
+    <value>购买</value>
+  </data>
+  <data name="MSGBOX_InitFail" xml:space="preserve">
+    <value>初始化失败!</value>
+  </data>
+  <data name="OrderComplete" xml:space="preserve">
+    <value>请联系管理员！</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="OD_Del" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="OD_ModCount" xml:space="preserve">
+    <value>修改数量</value>
+  </data>
+  <data name="OD_Remark" xml:space="preserve">
+    <value>口味备注</value>
+  </data>
+</root>

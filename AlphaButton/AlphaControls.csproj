@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC52C257-6A9B-4414-88E9-54B5F2CFDB92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AlphaControls</RootNamespace>
+    <AssemblyName>AlphaControls</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.2</OSVersion>
+    <DeployDirSuffix>AlphaButton</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <FileUpgradeFlags>0</FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsCE.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=969db8053d3322ac, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Windows Mobile 5.0 SDK R2\Managed Libraries\Microsoft.WindowsMobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsMobile.Status, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlphaControl\AlphaVerticalButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AlphaControl\AlphaTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AlphaControl\AlphaTimerButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AlphaControl\AlphaPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OtherControl\RemarkPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlsEvent\PictureShiftPanelEvent.cs" />
+    <Compile Include="ControlsEvent\SplashControlEvent.cs" />
+    <Compile Include="ControlsEvent\FormManageEvent.cs" />
+    <Compile Include="ListBox\Interfa.cs" />
+    <Compile Include="OtherControl\NonFullscreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherControl\NonFullscreenForm.Designer.cs">
+      <DependentUpon>NonFullscreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherControl\AlphaBarPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherControl\AlphaBarPanel.Designer.cs">
+      <DependentUpon>AlphaBarPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlphaControl\AlphaButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListBox\IExtendedListItem.cs" />
+    <Compile Include="ListBox\SmoothListboxHorizontal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListBox\SmoothListboxHorizontal.Designer.cs">
+      <DependentUpon>SmoothListboxHorizontal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherControl\OwnLogoPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OtherControl\GradientFillControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OtherControl\GlassButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherControl\GlassButton.Designer.cs">
+      <DependentUpon>GlassButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherControl\PicShiftControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OtherControl\TooltipCF.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OwnAPP\Gradientfill.cs" />
+    <Compile Include="OwnAPP\GraphicsApp.cs" />
+    <Compile Include="OtherControl\AnimateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherControl\AnimateControl.Designer.cs">
+      <DependentUpon>AnimateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlphaControl\AlphaStringPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OtherControl\PictureBoxPlus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherControl\PictureBoxPlus.designer.cs">
+      <DependentUpon>PictureBoxPlus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherControl\PictureShiftPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherControl\PictureShiftPanel.Designer.cs">
+      <DependentUpon>PictureShiftPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsEvent\PictureBoxPlusEvent.cs" />
+    <Compile Include="OwnAPP\GraphicsExtension.cs" />
+    <Compile Include="OwnAPP\GraphicsExtensionOwn.cs" />
+    <Compile Include="OwnAPP\IImagingFactory.cs" />
+    <Compile Include="OwnAPP\PlatformAPIs.cs" />
+    <Compile Include="OwnAPP\Win32Helper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AlphaControl\AlphaRoundedRectanglesButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AlphaControl\AlphaImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OtherControl\SplashControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherControl\SplashControl.Designer.cs">
+      <DependentUpon>SplashControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBox\SmoothListboxVertical.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListBox\SmoothListboxVertical.Designer.cs">
+      <DependentUpon>SmoothListboxVertical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBox\Utils.cs" />
+    <Compile Include="OtherControl\ScrollPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherControl\ScrollPanel.Designer.cs">
+      <DependentUpon>ScrollPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsEvent\ScrollPanelEvent.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OtherControl\NonFullscreenForm.resx">
+      <DependentUpon>NonFullscreenForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherControl\AlphaBarPanel.resx">
+      <DependentUpon>AlphaBarPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBox\SmoothListboxVertical.resx">
+      <DependentUpon>SmoothListboxVertical.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBox\SmoothListboxHorizontal.resx">
+      <DependentUpon>SmoothListboxHorizontal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherControl\AnimateControl.resx">
+      <DependentUpon>AnimateControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherControl\PictureBoxPlus.resx">
+      <DependentUpon>PictureBoxPlus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherControl\PictureShiftPanel.resx">
+      <DependentUpon>PictureShiftPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherControl\SplashControl.resx">
+      <DependentUpon>SplashControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherControl\ScrollPanel.resx">
+      <DependentUpon>ScrollPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.WindowsMobile.Gestures\Microsoft.WindowsMobile.Gestures.csproj">
+      <Project>{B8B20FB7-545A-4896-8DB8-63052E801A5E}</Project>
+      <Name>Microsoft.WindowsMobile.Gestures</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
